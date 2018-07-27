@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 200ms;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    /*background-image: url(../Images/p3.jpg);*/
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.title2 {
+    font-size: 2.6rem;
+    color: fff;
+    margin-bottom: 50px;
+}
+
+.title2 span {
+    font-weight: 500;
+    display: block;
+    font-size: 0.8em;
+    color: rgba(240, 255, 255, 0.801);
+}
+/* header */
+
+header {
+    position: absolute;
+    width: 100%;
+    margin-top: 1em;
+    color: white;
+}
+
+/* nav */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: 4px;
+    color: aliceblue;
+}
+
+nav a:hover,
+nav a:focus {
+    color: aquamarine;
+    letter-spacing: 0.8rem;
+}
+
+/* home-welcome */
+#title1 {
+    color: aqua;
+    letter-spacing: 5px;
+}
+
+.welcome-page {
+    background-image: url(../Images/p3.jpg);
+    padding: 12em 0;
+    color: white;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+}
+
+@media (min-width: 60rem) {
+    .welcome-page {
+        height: 100vh;
+        padding-top: 30vh;
+    }
+}
+
+.logo {
+    padding: 5px;
+    overflow: auto;
+    height: 100px;
+}
+
+/* button */
+.button1 {
+    display: inline-block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1.8em;
+    color: aqua;
+    border-color: aqua;
+    border-radius: 50px;
+    font-weight: bolder;
+    /*background-color: rgb(0, 0, 0, 0.5);*/
+    transition: all ease-in-out 500ms;
+}
+
+.button1:hover,
+.button1:focus {
+    background-color: rgb(0, 0, 0, 0.75);
+    color: aquamarine;
+    border-radius: 10px;
+}
+
+.button1:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.699);
+}
+
+/* home-about */
+.home-about {
+    background-color: aqua;
+    margin-top: 0;
+    padding: 0;
+    overflow: auto;
+    padding: 20px;
+}
+
+.who-are-we {
+    padding: 0;
+    margin-top: 4;
+    margin-bottom: 4;
+}
+
+.home-about-textbox {
+    padding: 10px;
+    /*outline: 2px solid rgb(0, 0, 0);
+    outline-offset: -0.5em;*/
+    position: center;
+    position: relative;
+    color: black;
+}
+
+.blank-space {
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 4px;
+}
+
+/* footer */
+footer {
+    overflow: auto;
+    background-color: black;
+    color: aliceblue;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0.5em;
+    margin-bottom: 2em;
+}
+
+footer a {
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 1px;
+    color: aliceblue;
+}
+
+footer a:hover,
+footer a:focus {
+    color: aquamarine;
+}
+
+#footer-desc {
+    margin: 10px 10px;
+}
+
+/* parallax */
+.parallax-bg2,
+.parallax-bg {
+    transition: initial;
+}
+
+/* large-window */
+.large-window {
+    text-align: center;
+    max-width: 400px;
+    align-self: center;
+    margin: auto;
+    height: 400px;
+    background-image: url(../Images/akali.jpg);
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+    background-position: top center;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.window-tint {
+    background-color: rgba(0, 0, 0, 0.349);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-text {
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+}
+
+.promo-button {
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.4em 1.6em;
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 30px;
+    transition: all ease-in-out 500ms;
+}
+
+.promo-button:hover,
+.promo-button:focus {
+    background-color: rgba(127, 255, 212, 0.5);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+.promo-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.699);
+}
